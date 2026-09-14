@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mengyu Liang</title>
+    <link rel="shortcut icon" href="assets/niuhu.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+  <body>
+
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/up.png" width="50" height="50" alt="up" /></button>
+		<h5 class="notation"> "The Earth is what we all have in common" –Wendell Berry</h5>
+		<h1>Mengyu   Liang  (Amber)</h1>
+		<h3>Integrative Earth Science Researcher | Ph.D. in Remote Sensing</h3>
+
+
+		<div class="container"> <!-- Links to include in navbar -->
+		      <ul class="navbar">  <!-- Unordered list for links on navbar -->
+
+	      		<li><a href="index.html">ABOUT</a></li>
+				<li><a href="intro.html">CURRICULUM VITAE</a></li>
+				<li><a href="lit_review.html">PORTFOLIO</a></li>
+		        <li><a href="acknowledgement.html">CONTACT</a></li>
+
+		      </ul>
+		</div>
+		<hr />
+
+		<div class="content" id="project">
+			<p><a href="lit_review.html">&larr; Back to Portfolio</a></p>
+
+			<h2><span>&#167;</span> 2016 UW-Madison Cartography Lab Design Challenge</h2>
+
+			<a href="assets/design_challenge.pdf" target="_blank">
+				<img src="assets/design_challenge.png" alt="2016 UW-Madison Cartography Lab Design Challenge" style="width:100%; border-radius:10px;"/>
+			</a>
+
+			<p class="description">
+			After the challenging day-long <a href="https://geography.wisc.edu/madgeognews/2016/02/2016-cart-lab-design-challenge/" target="_blank">Design Challenge organized by the UW-Madison Cartography Lab</a>, along with my colleague <a href="http://kristenvincent.github.io/index.html" target="_blank">Kristen Vincent</a>, we created this visualization to facilitate communication of trends in multidimensional spatio-temporal data. This infographic provides a new perspective to understand the uncertainties in fossil record dating. Instead of simply representing the uncertainties of white-tail deer fossil record dating at each site, we used color and symbol size to explore the potential factors that could contribute to the uncertainties in dating fossils. Our conclusion is that, from looking at one state, greater variance in dating is not related to the amount of specimens found or the year of publication. However, we could not eliminate these factors just yet; we would need to look at other species and a larger spatial extent to draw a firm conclusion.
+			</p>
+		</div>
+
+		<div class="footwrap" id="bike">
+			<p>Old photo of Wenmiao Straight Street in Downtown Kunming | Photo credit: pandaguides.com
+		</div>
+		<button id="credit"><p>&#169; Mengyu Liang  2026</p></button>
+
+		<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+
+  </body>
+</html>

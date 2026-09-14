@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mengyu Liang</title>
+    <link rel="shortcut icon" href="assets/niuhu.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+  <body>
+
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/up.png" width="50" height="50" alt="up" /></button>
+		<h5 class="notation"> "The Earth is what we all have in common" –Wendell Berry</h5>
+		<h1>Mengyu   Liang  (Amber)</h1>
+		<h3>Integrative Earth Science Researcher | Ph.D. in Remote Sensing</h3>
+
+
+		<div class="container"> <!-- Links to include in navbar -->
+		      <ul class="navbar">  <!-- Unordered list for links on navbar -->
+
+	      		<li><a href="index.html">ABOUT</a></li>
+				<li><a href="intro.html">CURRICULUM VITAE</a></li>
+				<li><a href="lit_review.html">PORTFOLIO</a></li>
+		        <li><a href="acknowledgement.html">CONTACT</a></li>
+
+		      </ul>
+		</div>
+		<hr />
+
+		<div class="content" id="project">
+			<p><a href="lit_review.html">&larr; Back to Portfolio</a></p>
+
+			<h2><span>&#167;</span> Do College Graduates Make the Country Rich?</h2>
+
+			<a href="assets/story_telling.png" target="_blank">
+				<img src="assets/story_telling.png" alt="Do College Graduates Make the Country Rich?" style="width:100%; border-radius:10px;"/>
+			</a>
+
+			<p class="description">
+			This visual story argues that a higher percentage of college graduates relative to the total population is a contributing factor to a country's economic strength. The visual story uses a proportional symbol map and three supporting histograms to display the arguments and counter-arguments around the research question.
+			</p>
+		</div>
+
+		<div class="footwrap" id="bike">
+			<p>Old photo of Wenmiao Straight Street in Downtown Kunming | Photo credit: pandaguides.com
+		</div>
+		<button id="credit"><p>&#169; Mengyu Liang  2026</p></button>
+
+		<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+
+  </body>
+</html>

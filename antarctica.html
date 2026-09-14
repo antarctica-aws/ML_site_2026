@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mengyu Liang</title>
+    <link rel="shortcut icon" href="assets/niuhu.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+  <body>
+
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/up.png" width="50" height="50" alt="up" /></button>
+		<h5 class="notation"> "The Earth is what we all have in common" –Wendell Berry</h5>
+		<h1>Mengyu   Liang  (Amber)</h1>
+		<h3>Integrative Earth Science Researcher | Ph.D. in Remote Sensing</h3>
+
+
+		<div class="container"> <!-- Links to include in navbar -->
+		      <ul class="navbar">  <!-- Unordered list for links on navbar -->
+
+		      	<!-- <a href="http://www.stackoverflow.com/">
+				    <button: stackoverflow-->
+
+	      		<li><a href="index.html">ABOUT</a></li>
+				<li><a href="intro.html">CURRICULUM VITAE</a></li>
+				<li><a href="lit_review.html">PORTFOLIO</a></li>
+		        <li><a href="acknowledgement.html">CONTACT</a></li>
+
+		      </ul>
+		</div>
+		<hr />
+
+		<div class="content" id="project">
+			<p><a href="lit_review.html">&larr; Back to Portfolio</a></p>
+
+			<h2><span>&#167;</span> Research the Icy Land</h2>
+
+			<a href="assets/antarctica.png" target="_blank">
+				<img src="assets/antarctica.png" alt="Antarctica research projects map" style="width:100%; border-radius:10px;"/>
+			</a>
+
+			<p class="description">
+			This map project categorizes Antarctic research projects according to project outcome. The categorization is based on the goals of the projects, drawn from reviewing many Antarctica project descriptions listed on the <a href="https://www.usap.gov/researchOpportunities.cfm?m=3/" target="_blank">NSF</a> website as well as other national polar research institution websites, such as <a href="http://www.antarcticanz.govt.nz/" target="_blank">Antarctica New Zealand</a>. The map conveys that the main trend of current Antarctic research is still to understand the Antarctic region and its ecosystem, based on the fact that large portions of research stations focus their projects on studying Antarctica's ecosystem, weather system, etc.
+			</p>
+			<p class="description">
+			Another reason for making this map was my own curiosity about research opportunities in Antarctica. Through reviewing the project summaries, I gained information on the projects, the research stations, and the culture of different research stations. Making this map was a starting point for getting to know the region.
+			</p>
+		</div>
+
+		<div class="footwrap" id="bike">
+			<p>Old photo of Wenmiao Straight Street in Downtown Kunming | Photo credit: pandaguides.com
+		</div>
+		<button id="credit"><p>&#169; Mengyu Liang  2026</p></button>
+
+		<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+
+  </body>
+</html>

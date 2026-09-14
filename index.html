@@ -1,0 +1,95 @@
+<!-- 
+	Author: Mengyu Liang
+	Web Mapping: Assignment 1
+	Experiment: with the navigation bar, I attempted different ways to keep styles of the selected taps, so it is a better visual reenforcement for users.
+				From looking at examples in Stackoverflow and W3school, I tried to change the tabs into buttoms or forms, but these ways fails to keep the styles, and I think jquery or javascript needs to be written. Pure html/css may not work for this task.
+
+	Creativity: even though I have not used the css background image attribute to add background image, I have been able to add a footwrapping image at the 	
+				bottom of my site. The opacity is added to the image to achieve a smooth gradient effect, allowing the top portion of the image to smoothly blend into the background of the page.
+			
+				Also, tables were added and styled in the method section. 
+
+				For the fonts, I have been experimenting Googlefontapis, and was able to understand how to import, change the style, weight of the open source fonts. The results can be seen on the title section of the pages.
+
+	Note: the site maps section is reserved for embedding the web maps created for assignemnt 2.
+ -->
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mengyu Liang</title>
+    <link rel="shortcut icon" href="assets/niuhu.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+  		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/up.png" width="50" height="50" alt="up" /></button>
+
+
+
+		<h5 class="notation"> "The Earth is what we all have in common" –Wendell Berry</h5>
+		<h1>Mengyu   Liang  (Amber)</h1>
+		<h3>Integrative Earth Science Researcher | Ph.D. in Remote Sensing</h3>
+		
+
+		<div class="container"> <!-- Links to include in navbar -->
+		      <ul class="navbar">  <!-- Unordered list for links on navbar -->
+
+		      	<!-- <a href="http://www.stackoverflow.com/">
+				    <button: stackoverflow-->
+
+	      		<li><a href="index.html">ABOUT</a></li>
+				<li><a href="intro.html">CURRICULUM VITAE</a></li>
+				<li><a href="lit_review.html">PORTFOLIO</a></li>
+		        <li><a href="acknowledgement.html">CONTACT</a></li>
+		        
+		      </ul>
+		</div>
+		<hr />
+		<img src="assets/ml-profile.jpeg" alt="profile" class="img-responsive center-block" id="profile" />
+		<div class="content">
+			<!--h2><span>&#167;</span> Abstract</h2-->
+					</br>
+					
+					<p>
+					I'm currently a postdoc fellow at Stanford Woods Institute of the Environment working on combining remote sensing and econometric to assess the environmental and social outcomes of natural climate solutions and forest management interventions. I completed my PhD at the Department of Geographical Sciences at UMD in May 2024. During my PhD, I developed remote sensing techniques utilizing multi-source remote sensing data (e.g,. GEDI, ICESat2, Landsat archive, PlanetScope) for monitoring long-term carbon sequestration in forest restoration areas in East Africa. Seeking to understand how to use Earth Observation to improve the sustainability of human-environment interaction is both a passion of mine and the research agenda during my PhD and onwards. Moreover, I have developed skills in forest inventory and Terrestrial Laser Scanner (TLS) data collection from working on field campaigns in Mozambique and Uganda. Developing web-based interactive map dashboards is another set of technical expertise that I have been practicing (see http://mliang8.github.io/ for map portfolio ) and want to employ in future projects to enhance communications with various stakeholders.</p>
+					
+					
+		</div>
+
+		
+		<div class="footwrap" id="lijiang">
+			<p>The "Kunming" Ford Tri-motor aircraft landing on a meadow near Jade Dragon Mountain, in Lijiang, Yunnan | Photo credit: 2018 Fiona Dunlop</p>
+		</div>
+
+		<button id="credit"><p>&#169; Mengyu Liang  2026</p></button>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script>
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+			    mybutton.style.display = "block";
+			  } else {
+			    mybutton.style.display = "none";
+			  }
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		</script>
+  </body>
+</html>
